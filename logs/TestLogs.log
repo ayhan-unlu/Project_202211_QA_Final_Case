@@ -1,0 +1,61 @@
+[INFO ] 2022-11-28 14:58:01.616 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 14:58:01.623 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 14:58:01.624 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 14:58:01.624 [main] Log4jDemo - This is a fatal message
+[INFO ] 2022-11-28 15:05:54.318 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 15:05:54.331 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 15:05:54.334 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 15:05:54.335 [main] Log4jDemo - This is a fatal message
+[INFO ] 2022-11-28 15:09:26.218 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 15:09:26.226 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 15:09:26.228 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 15:09:26.228 [main] Log4jDemo - This is a fatal message
+[INFO ] 2022-11-28 15:12:29.642 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 15:12:29.654 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 15:12:29.656 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 15:12:29.657 [main] Log4jDemo - This is a fatal message
+[TRACE] 2022-11-28 15:13:01.365 [main] Log4jDemo - This is a trace message
+[INFO ] 2022-11-28 15:13:01.373 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 15:13:01.374 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 15:13:01.375 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 15:13:01.376 [main] Log4jDemo - This is a fatal message
+[TRACE] 2022-11-28 16:07:32.151 [main] Log4jDemo - This is a trace message
+[INFO ] 2022-11-28 16:07:32.157 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 16:07:32.158 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 16:07:32.159 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 16:07:32.159 [main] Log4jDemo - This is a fatal message
+[TRACE] 2022-11-28 16:22:33.506 [main] Log4jDemo - This is a trace message
+[INFO ] 2022-11-28 16:22:33.514 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 16:22:33.514 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 16:22:33.515 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 16:22:33.515 [main] Log4jDemo - This is a fatal message
+[TRACE] 2022-11-28 16:24:20.215 [main] Log4jDemo - This is a trace message
+[INFO ] 2022-11-28 16:24:20.223 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 16:24:20.224 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 16:24:20.225 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 16:24:20.226 [main] Log4jDemo - This is a fatal message
+[TRACE] 2022-11-28 16:26:13.839 [main] Log4jDemo - This is a trace message
+[INFO ] 2022-11-28 16:26:13.845 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 16:26:13.846 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 16:26:13.847 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 16:26:13.849 [main] Log4jDemo - This is a fatal message
+[TRACE] 2022-11-28 16:35:01.495 [main] Log4jDemo - This is a trace message
+[INFO ] 2022-11-28 16:35:01.500 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 16:35:01.501 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 16:35:01.501 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 16:35:01.501 [main] Log4jDemo - This is a fatal message
+[TRACE] 2022-11-28 16:35:57.367 [main] Log4jDemo - This is a trace message
+[INFO ] 2022-11-28 16:35:57.378 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 16:35:57.379 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 16:35:57.381 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 16:35:57.383 [main] Log4jDemo - This is a fatal message
+[TRACE] 2022-11-28 16:39:27.199 [main] Log4jDemo - This is a trace message
+[INFO ] 2022-11-28 16:39:27.209 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 16:39:27.210 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 16:39:27.212 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 16:39:27.212 [main] Log4jDemo - This is a fatal message
+[TRACE] 2022-11-28 16:56:30.954 [main] Log4jDemo - This is a trace message
+[INFO ] 2022-11-28 16:56:30.964 [main] Log4jDemo - This is an information message
+[ERROR] 2022-11-28 16:56:30.965 [main] Log4jDemo - This is an error message
+[WARN ] 2022-11-28 16:56:30.966 [main] Log4jDemo - This is a warning message
+[FATAL] 2022-11-28 16:56:30.967 [main] Log4jDemo - This is a fatal message
