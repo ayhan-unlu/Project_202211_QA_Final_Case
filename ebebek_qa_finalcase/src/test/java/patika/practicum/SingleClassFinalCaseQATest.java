@@ -22,15 +22,8 @@ public class SingleClassFinalCaseQATest {
   public static void main(String[] args) throws Exception {
 
     String baseUrl = "https://www.e-bebek.com";
-    System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\SeleniumProject\\src\\drivers\\chromedriver.exe");// mentioning
-                                                                                                                   // the
-                                                                                                                   // driver
-                                                                                                                   // we
-                                                                                                                   // use
-                                                                                                                   // and
-                                                                                                                   // indicating
-                                                                                                                   // its
-                                                                                                                   // location
+    System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\SeleniumProject\\src\\drivers\\chromedriver.exe");
+    //Mentioning the driver we use and indicating its location
 
     // webdriver error solved with adding jar file source
     WebDriver driver = new ChromeDriver();// for driver initilisation or creating a driver object in java
