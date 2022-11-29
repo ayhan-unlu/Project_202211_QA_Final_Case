@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 
@@ -33,11 +34,11 @@ public class ebebekMainPage {
         return element;
         
     }
-/* ????????SHOULD BE ADDED OR NOT?
-    public static void hittingSearchButton(WebDriver driver) {
+
+    public static void searchingDesiredWords(WebDriver driver) {
 
         driver.findElement(By.id("txtSearchBox")).sendKeys("kaşık maması",Keys.ENTER);
 
     }
-     */
+     
 }
