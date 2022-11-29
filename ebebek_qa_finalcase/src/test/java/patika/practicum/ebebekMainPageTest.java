@@ -2,6 +2,8 @@ package patika.practicum;
 
 import static org.junit.Assert.assertTrue;
 
+import java.time.Duration;
+
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,14 +24,16 @@ System.out.println("TEST completed succesfully");
     }
 
     private static void ebebekMainPage() {
-        String baseUrl = "https://www.e-bebek.com";
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\SeleniumProject\\src\\drivers\\chromedriver.exe");//mentioning the driver we use and indicating its location
+      ebebekMainPage.settingConfiguration();
+    //  ebebekMainPage.openingebebekHomePage();
+ //       String baseUrl = "https://www.e-bebek.com";
+ //       System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\SeleniumProject\\src\\drivers\\chromedriver.exe");//mentioning the driver we use and indicating its location
 
         //webdriver error solved with adding jar file source 
-        driver = new ChromeDriver();//for driver initilisation or creating a driver object in java
+  //      driver = new ChromeDriver();//for driver initilisation or creating a driver object in java
         JavascriptExecutor js;
         js = (JavascriptExecutor) driver;
-        driver.get(baseUrl);//to indicate where you want to go https:// must be included
+ //       driver.get(baseUrl);//to indicate where you want to go https:// must be included
 
         // source : https://www.youtube.com/watch?v=sxmwGdZbV-Y&t=3s
 
@@ -37,7 +41,7 @@ System.out.println("TEST completed succesfully");
         //System.out.println(driver.getTitle());//for printing website title
 
 
-        driver.manage().window().maximize();//maximize the window
+  //     driver.manage().window().maximize();//maximize the window
        // Thread.sleep(1000);//waits for 1 second to go to next line of code
 
        // driver.findElement(By.id("txtSearchBox")).sendKeys("kaşık maması",Keys.ENTER);
@@ -62,4 +66,11 @@ System.out.println("TEST completed succesfully");
 
         assertTrue(true);
     }
+    public static void settingConfiguration() {
+      String baseUrl = "https://www.e-bebek.com";
+      System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\SeleniumProject\\src\\drivers\\chromedriver.exe");//mentioning the driver we use and indicating its location
+      driver = new ChromeDriver();//for driver initilisation or creating a driver object in java
+      driver.manage().window().maximize();
+      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+  }
 }
