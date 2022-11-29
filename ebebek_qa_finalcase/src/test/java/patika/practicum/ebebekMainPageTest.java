@@ -22,8 +22,7 @@ public class ebebekMainPageTest {
   //  static Logger logger = LogManager.getLogger(ebebekMainPageTest.class);
   static String baseUrl = "https://www.e-bebek.com";
 
-  private static void ebebekMainPageTest() {}
-    public static void main(String[] args) {
+  public static void main(String[] args) {
         
         ebebekMainPageTest1();
 
@@ -39,11 +38,7 @@ System.out.println("TEST completed succesfully");
  //       String baseUrl = "https://www.e-bebek.com";
  //       System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\SeleniumProject\\src\\drivers\\chromedriver.exe");//mentioning the driver we use and indicating its location
 
-        //webdriver error solved with adding jar file source 
-  //      driver = new ChromeDriver();//for driver initilisation or creating a driver object in java
-        JavascriptExecutor js;
-        js = (JavascriptExecutor) driver;
- //       driver.get(baseUrl);//to indicate where you want to go https:// must be included
+        
 
         // source : https://www.youtube.com/watch?v=sxmwGdZbV-Y&t=3s
 
@@ -78,7 +73,6 @@ System.out.println("TEST completed succesfully");
     }
     public static void settingConfigurationTest() {
       
-      String baseUrl = "https://www.e-bebek.com";
       System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\SeleniumProject\\src\\drivers\\chromedriver.exe");//mentioning the driver we use and indicating its location
       driver = new ChromeDriver();//for driver initilisation or creating a driver object in java
       driver.manage().window().maximize();

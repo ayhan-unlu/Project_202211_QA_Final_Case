@@ -18,7 +18,6 @@ public class ebebekMainPage {
     static String baseUrl = "https://www.e-bebek.com";
 
     public static void settingConfiguration() {
-        String baseUrl = "https://www.e-bebek.com";
         System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\SeleniumProject\\src\\drivers\\chromedriver.exe");//mentioning the driver we use and indicating its location
         driver = new ChromeDriver();//for driver initilisation or creating a driver object in java
         driver.manage().window().maximize();
