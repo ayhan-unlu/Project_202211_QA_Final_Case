@@ -64,53 +64,55 @@ public class SingleClassFinalCaseQATest {
     Thread.sleep(2000);// waits for 2 second to go to next line of code
     js.executeScript("window.scrollTo(0,5530)");
     Thread.sleep(2000);// waits for 2 second to go to next line of code
-        
-    String nameOfLastItemOnTheSearchPage = driver.findElement(By.xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).getAccessibleName();
 
+    String nameOfLastItemOnTheSearchPage = driver
+        .findElement(By.xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).getAccessibleName();
 
     driver.findElement(By.xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).click();
 
-
     Thread.sleep(2000);// waits for 2 second to go to next line of code
 
-    System.out.println("ürün sayfasında bulunan isim");
-  
-
+    // System.out.println("ürün sayfasında bulunan isim");
 
     // js.executeScript("window.scrollTo(0,2875)");
 
-    // Thread.sleep(2000);//waits for 2 second to go to next line of code
-    js.executeScript("window.scrollTo(0,0)");
+    String expectedUrl = "https://www.e-bebek.com/oioi-mama-kasigi-2li-aqua-green--mellow-yellow-p-oioi-1060016";
+    String actualUrl = driver.getCurrentUrl();
+    Assert.assertEquals(expectedUrl, actualUrl); // Thread.sleep(2000);//waits for 2 second to go to next line of code
+    
+    
+    //https://www.e-bebek.com/oioi-mama-kasigi-2li-aqua-green--mellow-yellow-p-oioi-1060016
 
     Thread.sleep(2000);// waits for 2 second to go to next line of code
+
     driver.findElement(By.id("addToCartBtn")).click();
 
     Thread.sleep(2000);// waits for 2 second to go to next line of code
+
+  //  WebElement visibleShowCartButton = driver.findElement(By.xpath("[text()=' Ürün Güncellendi ']"));
+ //   Assert.assertTrue(visibleShowCartButton.isDisplayed());
+
     driver.findElement(By.xpath("//a[@id='btnShowCart']")).click();
 
     Thread.sleep(2000);// waits for 1 second to go to next line of code
     // js.executeScript("window.scrollTo(0,1377)");
 
-    // Thread.sleep(2000);//waits for 2 second to go to next line of code
+    expectedUrl = "https://www.e-bebek.com/cart";
+    actualUrl = driver.getCurrentUrl();
+    Assert.assertEquals(expectedUrl, actualUrl); // Thread.sleep(2000);//waits for 2 second to go to next line of code
     driver.findElement(By.id("btnGoToShippingAddress")).click();
 
     Thread.sleep(2000);// waits for 2 second to go to next line of code
-    // js.executeScript("window.scrollTo(0,550)");
 
-    // Thread.sleep(2000);//waits for 2 second to go to next line of code
+    // System.out.println(driver.getTitle());// for printing website title
 
-    // Thread.sleep(2000);//waits for 1 second to go to next line of code
-
-    // Thread.sleep(2000);//waits for 2 second to go to next line of code
-
-    // driver.get("https://www.e-bebek.com");//to indicate where you want to go
-    // https:// must be included
-
-    System.out.println(driver.getTitle());// for printing website title
+    expectedUrl = "https://www.e-bebek.com/login?forced=true";
+    actualUrl = driver.getCurrentUrl();
+    Assert.assertEquals(expectedUrl, actualUrl);
 
     Thread.sleep(2000);// waits for 2 second to go to next line of code
 
-    // driver.quit();//for leaving the website
+    driver.quit();// for leaving the website
 
   }
 }
