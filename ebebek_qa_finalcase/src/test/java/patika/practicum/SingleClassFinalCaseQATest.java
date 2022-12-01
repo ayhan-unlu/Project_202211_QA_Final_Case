@@ -82,13 +82,10 @@ public class SingleClassFinalCaseQATest {
     js.executeScript("window.scrollTo(0,5530)");
     TimeUnit.SECONDS.sleep(2);
 
-    /*
-     * String nameOfLastItemOnTheSearchPage = driver.findElement(By.
-     * xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).
-     * getAccessibleName();
-     * System.out.println(nameOfLastItemOnTheSearchPage);
-     */
-
+    
+     String nameOfLastItemOnTheSearchPage = driver.findElement(By.xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).getAccessibleName();
+     System.out.println(nameOfLastItemOnTheSearchPage);
+    
     driver.findElement(By.xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).click();
 
     TimeUnit.SECONDS.sleep(2);
