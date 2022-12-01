@@ -7,6 +7,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -41,30 +43,29 @@ public class SingleClassFinalCaseQATest {
     // System.out.println(driver.getTitle());//for printing website title
 
     driver.manage().window().maximize();// maximize the window    
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
-
+  //  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));// waits until 15 seconds maximum if required. But it wont be used in this project
+     waitForTwoSeconds();// waits for 2 second to go to next line of code
 
     //ebebek logo is controlled in the main page 
     WebElement mainPageLogoElement = driver.findElement(By.xpath("//img[@alt='Ebebek Logo Banner']"));
     Assert.assertTrue(mainPageLogoElement.isDisplayed());
 
-    // Thread.sleep(2000);// waits for 2 second to go to next line of code
 
     //Task 2. Enter "kaşık mama"-"spoon baby food" in the search bar and the last product should be clicked from the results of the search, it should be verified that the opened product and the product clicked in the search result are the same.
 
     driver.findElement(By.id("txtSearchBox")).sendKeys("kaşık maması");
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();// waits for 2 second to go to next line of code
     driver.findElement(By.id("txtSearchBox")).sendKeys(Keys.ENTER);
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();// waits for 2 second to go to next line of code
 
     js.executeScript("window.scrollTo(0,1163)");
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();// used extra for better scrolling down 
     js.executeScript("window.scrollTo(0,2594)");
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();
     js.executeScript("window.scrollTo(0,4062)");
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();
     js.executeScript("window.scrollTo(0,5530)");
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();
 
    /* 
    String nameOfLastItemOnTheSearchPage = driver.findElement(By.xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).getAccessibleName();
@@ -74,19 +75,19 @@ public class SingleClassFinalCaseQATest {
     driver.findElement(By.xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).click();
 
 
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();
 
     String expectedUrl = "https://www.e-bebek.com/oioi-mama-kasigi-2li-aqua-green--mellow-yellow-p-oioi-1060016";
     String actualUrl = driver.getCurrentUrl();
  
-    Assert.assertEquals(expectedUrl, actualUrl); // Thread.sleep(2000);//waits for 2 second to go to next line of code
+    Assert.assertEquals(expectedUrl, actualUrl);
 
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();
 
     //Task 3. The product should be added to the cart.
     
     driver.findElement(By.id("addToCartBtn")).click();
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();
 
     WebElement showCartButton = driver.findElement(By.xpath("//a[@id='btnShowCart']"));
     Assert.assertTrue(showCartButton.isDisplayed());
@@ -94,17 +95,17 @@ public class SingleClassFinalCaseQATest {
     //Task 4. Click the view cart button from the right-handed mode-window.
 
     driver.findElement(By.xpath("//a[@id='btnShowCart']")).click();
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();// waits for 2 second to go to next line of code
 
     expectedUrl = "https://www.e-bebek.com/cart";
     actualUrl = driver.getCurrentUrl();
     Assert.assertEquals(expectedUrl, actualUrl); 
-    Thread.sleep(2000);//waits for 2 second to go to next line of code
+    waitForTwoSeconds();//waits for 2 second to go to next line of code
     
     //Task 5. Click the Complete Shopping button.
 
     driver.findElement(By.id("btnGoToShippingAddress")).click();
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();// waits for 2 second to go to next line of code
 
     //Task 6. It should be verified that the member login screen is on.
 
@@ -112,9 +113,13 @@ public class SingleClassFinalCaseQATest {
     actualUrl = driver.getCurrentUrl();
     Assert.assertEquals(expectedUrl, actualUrl);
 
-    Thread.sleep(2000);// waits for 2 second to go to next line of code
+    waitForTwoSeconds();// waits for 2 second to go to next line of code
 
     driver.quit();// for leaving the website
 
+  }
+
+  private static void waitForTwoSeconds() throws InterruptedException {
+    Thread.sleep(2000);
   }
 }
