@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,14 +16,15 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/**
+/*
+ *
  * Hello world!
  * "The best functions are those with no parameters" Robert Cecil Martin
  *
  */
 
-public class SingleClassFinalCaseQATest {
-  static Logger logger = LogManager.getLogger(SingleClassFinalCaseQATest.class);
+public class SingleClassSingleMethodFinalCaseQATest {
+  static Logger logger = LogManager.getLogger(SingleClassSingleMethodFinalCaseQATest.class);
 
   @Test
   public void test() throws InterruptedException {
@@ -38,14 +40,22 @@ public class SingleClassFinalCaseQATest {
     JavascriptExecutor js;
     js = (JavascriptExecutor) driver;
 
+
+
     // Task 1. https://www.e-bebek.com/ website should be opened.
-
+    
     driver.get(baseUrl);// to indicate where you want to go https:// must be included
-
     // source : https://www.youtube.com/watch?v=sxmwGdZbV-Y&t=3s
-
+    
     // System.out.println(driver.getTitle());//for printing website title
-
+    
+    /*WebElement ebebekLogo = driver.findElement(By.xpath("//body [@class='ins-custom-overflow-c2703']"));
+    ebebekLogo.sendKeys(Keys.CONTROL,Keys.SUBTRACT);;
+    
+    driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT));
+    driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT));
+    driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT));
+    TimeUnit.SECONDS.sleep(10);*/
     driver.manage().window().maximize();// maximize the window
     // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));// waits
     // until 15 seconds maximum if required. But it wont be used in this project
@@ -54,6 +64,19 @@ public class SingleClassFinalCaseQATest {
     // waits for 2 second to go to next line of code
 
     // ebebek logo is controlled in the main page
+ /*    Actions actions = new Actions(driver); 
+    
+    WebElement mainPAge= driver.findElement(By.tagName("html"));
+    actions.sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT)).perform();
+    actions.sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT)).perform();
+    actions.sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT)).perform();
+
+    WebElement closeQuestionaireButton = driver.findElement(By.xpath("//img [@class='ins-close-button-c2703']"));
+
+    actions.click(closeQuestionaireButton).perform();
+
+
+*/
     WebElement mainPageLogoElement = driver.findElement(By.xpath("//img[@alt='Ebebek Logo Banner']"));
     Assert.assertTrue(mainPageLogoElement.isDisplayed());
 
@@ -81,11 +104,11 @@ public class SingleClassFinalCaseQATest {
 
     js.executeScript("window.scrollTo(0,5530)");
     TimeUnit.SECONDS.sleep(2);
+    
+    //String nameOfLastItemOnTheSearchPage = driver.findElement(By.xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).getAccessibleName();
 
-    
-     String nameOfLastItemOnTheSearchPage = driver.findElement(By.xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).getAccessibleName();
-     System.out.println(nameOfLastItemOnTheSearchPage);
-    
+    //System.out.println(nameOfLastItemOnTheSearchPage);
+         
     driver.findElement(By.xpath("//img[@alt='OiOi Mama Kaşığı 2’li Aqua Green- Mellow'] ")).click();
 
     TimeUnit.SECONDS.sleep(2);
