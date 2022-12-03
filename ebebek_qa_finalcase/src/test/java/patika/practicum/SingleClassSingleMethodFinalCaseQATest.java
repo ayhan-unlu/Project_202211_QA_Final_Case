@@ -7,8 +7,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-
 import java.util.concurrent.TimeUnit;
 
 //import java.time.Duration;
@@ -26,7 +24,7 @@ import org.apache.logging.log4j.Logger;
 public class SingleClassSingleMethodFinalCaseQATest {
   static Logger logger = LogManager.getLogger(SingleClassSingleMethodFinalCaseQATest.class);
 
-  @Test
+@Test
   public void test() throws InterruptedException {
 
     // Configurations

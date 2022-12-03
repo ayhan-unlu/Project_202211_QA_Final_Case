@@ -22,6 +22,18 @@ The project must be written in the Java programming language. Maven repo should 
 <br>• It should be developed in accordance with OOP principles.
 
 
+## Test Steps BY PAGE
+
+1. ebebek Home Page 
+
+2. "kaşık maması" search result page
+
+3. Product Detail Page
+
+4. Shopping Cart
+
+5. Login Page
+
 ## Thanks to   <a href="https://e-bebek.com" target="blank"><img align="center" src="https://user-images.githubusercontent.com/103220953/203633014-5f4cd869-ecc9-43ee-98d8-f93f6100e07a.svg" alt="https://e-bebek.com" height="100" width="100" /></a> , <a href="https://app.patika.dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/ayhan-unlu/ayhan-unlu/main/patikaLogoSVG.svg" alt="https://app.patika.dev/" height="100" width="100" /></a> and <a href="https://kodluyoruz.org/tr/kodluyoruz/" target="blank"><img align="center" src="https://raw.githubusercontent.com/ayhan-unlu/ayhan-unlu/main/KodluyoruzLogoSVG.svg" alt="https://kodluyoruz.org/tr/kodluyoruz/" height="100" width="100" /></a> 
 
 
