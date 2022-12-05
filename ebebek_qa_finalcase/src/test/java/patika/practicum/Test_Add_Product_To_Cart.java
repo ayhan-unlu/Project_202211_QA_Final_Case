@@ -1,4 +1,4 @@
-package patika.practicum;
+/*package patika.practicum;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Order;
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
  * Test_Add_Product_To_Cart
  * 
  * source : https://www.youtube.com/watch?v=2naKQHbFQpY
- */
+
 public class Test_Add_Product_To_Cart extends BaseTest {
 
     HomePage homePage;
@@ -72,4 +72,4 @@ public class Test_Add_Product_To_Cart extends BaseTest {
 
     }
 
-}
+}*/

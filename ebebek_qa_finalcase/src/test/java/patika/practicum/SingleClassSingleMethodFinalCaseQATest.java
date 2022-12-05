@@ -1,4 +1,4 @@
-/*
+
 package patika.practicum;
 
 import org.junit.Assert;
@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.util.concurrent.TimeUnit;
 
 //import java.time.Duration;
@@ -59,19 +60,7 @@ public class SingleClassSingleMethodFinalCaseQATest {
     // waits for 2 second to go to next line of code
 
     // ebebek logo is controlled in the main page
-     Actions actions = new Actions(driver); 
     
-    WebElement mainPAge= driver.findElement(By.tagName("html"));
-    actions.sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT)).perform();
-    actions.sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT)).perform();
-    actions.sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT)).perform();
-
-    WebElement closeQuestionaireButton = driver.findElement(By.xpath("//img [@class='ins-close-button-c2703']"));
-
-    actions.click(closeQuestionaireButton).perform();
-
-
-
     WebElement mainPageLogoElement = driver.findElement(By.xpath("//img[@alt='Ebebek Logo Banner']"));
     Assert.assertTrue(mainPageLogoElement.isDisplayed());
 
@@ -154,4 +143,3 @@ public class SingleClassSingleMethodFinalCaseQATest {
 
   }
 }
-*/

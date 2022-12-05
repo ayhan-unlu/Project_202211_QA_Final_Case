@@ -1,4 +1,4 @@
-package patika.practicum;
+/*package patika.practicum;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,5 +32,5 @@ public class BaseTest {
      public void tearDown() {
         driver.quit();// to close the browser
     }
- */
 }
+*/
