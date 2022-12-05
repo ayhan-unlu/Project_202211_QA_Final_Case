@@ -1,3 +1,4 @@
+/*
 package patika.practicum;
 
 import org.junit.Assert;
@@ -14,12 +15,8 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/*
- *
- * Hello world!
- * "The best functions are those with no parameters" Robert Cecil Martin
- *
- */
+// "The best functions are those with no parameters" Robert Cecil Martin
+
 
 public class SingleClassSingleMethodFinalCaseQATest {
   static Logger logger = LogManager.getLogger(SingleClassSingleMethodFinalCaseQATest.class);
@@ -47,13 +44,13 @@ public class SingleClassSingleMethodFinalCaseQATest {
     
     // System.out.println(driver.getTitle());//for printing website title
     
-    /*WebElement ebebekLogo = driver.findElement(By.xpath("//body [@class='ins-custom-overflow-c2703']"));
+    WebElement ebebekLogo = driver.findElement(By.xpath("//body [@class='ins-custom-overflow-c2703']"));
     ebebekLogo.sendKeys(Keys.CONTROL,Keys.SUBTRACT);;
     
     driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT));
     driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT));
     driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT));
-    TimeUnit.SECONDS.sleep(10);*/
+    TimeUnit.SECONDS.sleep(10);
     driver.manage().window().maximize();// maximize the window
     // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));// waits
     // until 15 seconds maximum if required. But it wont be used in this project
@@ -62,7 +59,7 @@ public class SingleClassSingleMethodFinalCaseQATest {
     // waits for 2 second to go to next line of code
 
     // ebebek logo is controlled in the main page
- /*    Actions actions = new Actions(driver); 
+     Actions actions = new Actions(driver); 
     
     WebElement mainPAge= driver.findElement(By.tagName("html"));
     actions.sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT)).perform();
@@ -74,7 +71,7 @@ public class SingleClassSingleMethodFinalCaseQATest {
     actions.click(closeQuestionaireButton).perform();
 
 
-*/
+
     WebElement mainPageLogoElement = driver.findElement(By.xpath("//img[@alt='Ebebek Logo Banner']"));
     Assert.assertTrue(mainPageLogoElement.isDisplayed());
 
@@ -157,3 +154,4 @@ public class SingleClassSingleMethodFinalCaseQATest {
 
   }
 }
+*/

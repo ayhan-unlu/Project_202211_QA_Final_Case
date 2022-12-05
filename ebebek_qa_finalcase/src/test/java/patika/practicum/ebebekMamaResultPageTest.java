@@ -1,3 +1,4 @@
+/*
 package patika.practicum;
 
 import static org.junit.Assert.assertTrue;
@@ -53,9 +54,7 @@ System.out.println("TEST completed succesfully");
       //  Thread.sleep(2000);//waits for 1 second to go to next line of code
     }
 
-    /**
-     * Rigorous Test :-)
-     */
+
     // @Ignore
     @Test
     public void shouldAnswerWithTrue() {
@@ -63,3 +62,4 @@ System.out.println("TEST completed succesfully");
         assertTrue(true);
     }
 }
+*/

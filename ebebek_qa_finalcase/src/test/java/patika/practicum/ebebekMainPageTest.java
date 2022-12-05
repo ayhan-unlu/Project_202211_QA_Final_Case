@@ -1,3 +1,4 @@
+/*
 package patika.practicum;
 
 import static org.junit.Assert.assertTrue;
@@ -9,13 +10,12 @@ import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-/*import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.message.LoggerNameAwareMessage;
-*/
-/**
- * Unit test for simple App.
- */
+
+
+  Unit test for simple App.
 public class ebebekMainPageTest {
 
     private static  WebDriver driver = null;//for driver initilisation or creating a driver object in java
@@ -61,10 +61,7 @@ System.out.println("TEST completed succesfully");
     //    driver.findElement(By.id("txtSearchBox")).sendKeys(Keys.ENTER);
       //  Thread.sleep(2000);//waits for 1 second to go to next line of code
     }
-
-    /**
-     * Rigorous Test :-)
-     */
+ Rigorous Test :-)
     // @Ignore
     @Test
     public void shouldAnswerWithTrue() {
@@ -114,3 +111,4 @@ public static void searchingDesiredWordsTest(WebDriver driver) {
 
 }
 }
+*/
