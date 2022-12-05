@@ -8,15 +8,13 @@
 
 Functional, working Java File :
 [SingleClassSingleMethodFinalCaseQATest.java](https://github.com/ayhan-unlu/Project_202211_QA_Final_Case/blob/master/ebebek_qa_finalcase/src/test/java/patika/practicum/SingleClassSingleMethodFinalCaseQATest.java)
-
-Functional, working Test File :
-[SingleClassSingleMethodFinalCaseQATest.java]
-(https://github.com/ayhan-unlu/Project_202211_QA_Final_Case/blob/master/ebebek_qa_finalcase/src/test/java/patika/practicum/SingleClassSingleMethodFinalCaseQATest.java)
-## Project Summary
+<br>
 
 Functional, working pom.xml File :
 [pom.xml](https://github.com/ayhan-unlu/Project_202211_QA_Final_Case/blob/master/ebebek_qa_finalcase/pomJupiter.xml)
+<br>
 
+## Project Summary
 
 The following items must be performed with Selenium Webdriver.
 1. https://www.e-bebek.com/ website should be opened. **+DONE**
@@ -27,12 +25,13 @@ The following items must be performed with Selenium Webdriver.
 6. It should be verified that the member login screen is on. **+DONE**
 <br>
 <br>The project must be written in the Java programming language. Maven repo should be used.
-<br>• Codes must be shared via github. **(Completed)**
-<br>• Selenium and JUnit/Testng should be used for the script to be written. **(Completed)**
-<br>• The correct functioning of the script should be checked using Assertions.(Incomplete)
-<br>• Log should be used.(Incomplete)
-<br>• Page object model should be implemented. (Incomplete)
-<br>• It should be developed in accordance with OOP principles. (Incomplete)
+1. Codes must be shared via github. **COMPLETED**
+2. Selenium and JUnit/Testng should be used for the script to be written. **COMPLETED**
+3. The correct functioning of the script should be checked using Assertions.(Incomplete)
+4. Log should be used.(Incomplete)
+5. Page object model should be implemented. (Incomplete)
+6. It should be developed in accordance with OOP principles. (Incomplete)
+
 <br>
 <br>
 POM Project Design
