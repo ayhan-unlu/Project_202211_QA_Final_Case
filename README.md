@@ -17,12 +17,42 @@ Functional, working pom.xml File :
 ## Project Summary
 
 The following items must be performed with Selenium Webdriver.
+<br>
+
 1. https://www.e-bebek.com/ website should be opened. **+DONE**
+![01-ebebekHomePage](https://user-images.githubusercontent.com/103220953/206009133-e8296ecb-1c42-407d-854e-b250dd5c44ee.jpg)
+
 2. Enter "kaşık mama"-"spoon baby food" in the search bar and the last product should be clicked from the results of the search, it should be verified that the opened product and the product clicked in the search result are the same. **+DONE**
+<br>
+
+![02-kasikMamasiSearchPage](https://user-images.githubusercontent.com/103220953/206009539-0a2ac07c-e897-44b6-af63-2168fcf85a7e.jpg)
+
+![03-lastProductClickedOnSearchPage](https://user-images.githubusercontent.com/103220953/206009848-7163c834-173c-4f77-989b-0ba751cd38cb.jpg)
+
 3. The product should be added to the cart. **+DONE**
+<br>
+
+![04-lastProductDetailPage](https://user-images.githubusercontent.com/103220953/206011318-0ea0d8d5-a724-4412-b410-69c03c435ca9.jpg)
+
+
 4. Click the view cart button from the right-handed mode-window. **+DONE**
+<br>
+
+![05-lastProductAddedToCart](https://user-images.githubusercontent.com/103220953/206011349-8a26da9a-b2e4-42d0-b298-48e3fabfd51e.jpg)
+
+
 5. Click the Complete Shopping button. **+DONE**
+<br>
+
+![06-cartPage](https://user-images.githubusercontent.com/103220953/206011412-9cbbe17b-7ad2-4943-8957-3dbf00443e1a.jpg)
+
+
 6. It should be verified that the member login screen is on. **+DONE**
+<br>
+
+![07-forcedLoginPage](https://user-images.githubusercontent.com/103220953/206011449-efd7e509-3af5-45b0-84f1-a44d22e15989.jpg)
+
+
 <br>
 <br>The project must be written in the Java programming language. Maven repo should be used.
 <br>
