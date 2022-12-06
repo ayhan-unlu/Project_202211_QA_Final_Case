@@ -11,7 +11,7 @@ Functional, working Java File :
 <br>
 
 Functional, working pom.xml File :
-[pom.xml](https://github.com/ayhan-unlu/Project_202211_QA_Final_Case/blob/master/ebebek_qa_finalcase/pomJupiter.xml)
+[pom.xml](https://github.com/ayhan-unlu/Project_202211_QA_Final_Case/blob/master/ebebek_qa_finalcase/pom.xml)
 <br>
 
 ## Project Summary
@@ -93,6 +93,9 @@ Source : https://www.youtube.com/watch?v=2naKQHbFQpY
 5. [Forced Login Page](https://github.com/ayhan-unlu/Project_202211_QA_Final_Case/blob/master/ebebek_qa_finalcase/src/main/java/patika/practicum/ForcedLoginPage.java)
 
 <br>
+Jupiter<br>
+
+[pom.xml](https://github.com/ayhan-unlu/Project_202211_QA_Final_Case/blob/master/ebebek_qa_finalcase/pomJupiter.xml)
 
 
 ## Thanks to   <a href="https://e-bebek.com" target="blank"><img align="center" src="https://user-images.githubusercontent.com/103220953/203633014-5f4cd869-ecc9-43ee-98d8-f93f6100e07a.svg" alt="https://e-bebek.com" height="100" width="100" /></a> , <a href="https://app.patika.dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/ayhan-unlu/ayhan-unlu/main/patikaLogoSVG.svg" alt="https://app.patika.dev/" height="100" width="100" /></a> and <a href="https://kodluyoruz.org/tr/kodluyoruz/" target="blank"><img align="center" src="https://raw.githubusercontent.com/ayhan-unlu/ayhan-unlu/main/KodluyoruzLogoSVG.svg" alt="https://kodluyoruz.org/tr/kodluyoruz/" height="100" width="100" /></a> 
